@@ -23,3 +23,11 @@ export const LeftSide = styled.div`
 export const RightSide = styled.div`
   flex: 1;
 `;
+
+export const Title = styled.h1``;
+
+export const Description = styled.p``;
+
+export const Input = styled.input``;
+
+export const Button = styled.button``;

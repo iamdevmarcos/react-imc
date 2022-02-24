@@ -2,6 +2,8 @@ import { useState } from "react";
 import * as C from "./App.styles";
 import poweredImage from "./assets/powered.png";
 
+import { levels, calculateIMC } from "./utils/imc";
+
 export default function App() {
   const [heightField, setHeightField] = useState<number>(0);
   const [weightField, setWeightField] = useState<number>(0);

@@ -81,4 +81,23 @@ export const RightBig = styled.div`
   display: flex;
 `;
 
-export const RightArrow = styled.div``;
+export const RightArrow = styled.div`
+  position: absolute;
+  background: #227c9d;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: -35px;
+  margin-top: 145px;
+  transition: all ease 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+`;
+
+export const Image = styled.img``;

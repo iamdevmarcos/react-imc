@@ -1,6 +1,7 @@
 import { useState } from "react";
 import * as C from "./App.styles";
 import poweredImage from "./assets/powered.png";
+import leftArrowImage from "./assets/leftarrow.png";
 import { GridItem } from "./components/GridItem";
 
 import { levels } from "./data/levels";
@@ -18,6 +19,12 @@ export default function App() {
     } else {
       alert("Digite todos os campos!");
     }
+  };
+
+  const handleBackButton = () => {
+    setToShow(null);
+    setWeightField(0);
+    setHeightField(0);
   };
 
   return (
@@ -63,7 +70,9 @@ export default function App() {
             )}
             {toShow && (
               <C.RightBig>
-                <C.RightArrow></C.RightArrow>
+                <C.RightArrow onClick={handleBackButton}>
+                  <C.Image src={leftArrowImage} alt="" width={25} />
+                </C.RightArrow>
                 <GridItem data={toShow} />
               </C.RightBig>
             )}

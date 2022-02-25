@@ -20,8 +20,17 @@ export const Container = styled.div`
 export const LeftSide = styled.div`
   flex: 1;
 `;
+
 export const RightSide = styled.div`
   flex: 1;
+  display: flex;
+`;
+
+export const Grid = styled.div`
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 `;
 
 export const Title = styled.h1`

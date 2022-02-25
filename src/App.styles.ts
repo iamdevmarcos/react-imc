@@ -54,6 +54,11 @@ export const Input = styled.input`
   margin-bottom: 20px;
   font-size: 14px;
 
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
   &:focus {
     border-bottom: 2px solid rgba(150, 163, 171, 1);
   }
@@ -73,6 +78,11 @@ export const Button = styled.button`
 
   &:hover {
     opacity: 0.8;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
   }
 `;
 

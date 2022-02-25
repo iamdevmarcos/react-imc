@@ -34,3 +34,8 @@ export const Info = styled.div`
   font-size: 12px;
   margin-top: 14px;
 `;
+
+export const YourImc = styled.div`
+  font-size: 17px;
+  margin: 10px 0 50px 0;
+`;

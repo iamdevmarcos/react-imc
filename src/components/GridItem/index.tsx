@@ -19,6 +19,9 @@ export const GridItem = ({ data }: Props) => {
         />
       </C.Icon>
       <C.Title>{data.title}</C.Title>
+      {data.yourImc && (
+        <C.YourImc>Seu IMC é de: {data.yourImc} kg/m²</C.YourImc>
+      )}
       <C.Info>
         <>
           IMC está entre <strong>{data.imc[0]}</strong> e{" "}

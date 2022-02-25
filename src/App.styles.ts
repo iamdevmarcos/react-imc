@@ -75,3 +75,10 @@ export const Button = styled.button`
     opacity: 0.8;
   }
 `;
+
+export const RightBig = styled.div`
+  flex: 1;
+  display: flex;
+`;
+
+export const RightArrow = styled.div``;

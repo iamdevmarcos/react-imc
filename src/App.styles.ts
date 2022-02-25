@@ -1,7 +1,14 @@
 import styled from "styled-components";
 
-export const Main = styled.div``;
-export const Header = styled.div``;
+export const Main = styled.div`
+  padding-bottom: 50px;
+`;
+
+export const Header = styled.div`
+  @media (max-width: 770px) {
+    padding: 0 20px;
+  }
+`;
 
 export const Area = styled.div`
   max-width: 900px;
@@ -15,6 +22,12 @@ export const Container = styled.div`
   gap: 80px;
   max-width: 900px;
   margin: auto;
+
+  @media (max-width: 770px) {
+    padding: 0 20px;
+    flex-direction: column;
+    gap: 0;
+  }
 `;
 
 export const LeftSide = styled.div`
@@ -24,6 +37,10 @@ export const LeftSide = styled.div`
 export const RightSide = styled.div`
   flex: 1;
   display: flex;
+
+  @media (max-width: 770px) {
+    margin-top: 50px;
+  }
 `;
 
 export const Grid = styled.div`
@@ -31,6 +48,10 @@ export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+
+  @media (max-width: 430px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Title = styled.h1`
@@ -107,6 +128,12 @@ export const RightArrow = styled.div`
 
   &:hover {
     opacity: 0.8;
+  }
+
+  @media (max-width: 770px) {
+    margin-left: 0;
+    margin-top: 0;
+    border-radius: 10px;
   }
 `;
 

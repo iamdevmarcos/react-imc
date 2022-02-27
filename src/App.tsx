@@ -1,11 +1,15 @@
 import { useState } from "react";
+
+import { GlobalStyles } from "./styles/GlobalStyles";
 import * as C from "./App.styles";
+
 import leftArrowImage from "./assets/leftarrow.png";
-import { GridItem } from "./components/GridItem";
 
 import { levels } from "./data/levels";
 import { Level } from "./types/Level";
 import { calculateIMC } from "./utils/imc";
+
+import { GridItem } from "./components/GridItem";
 
 export default function App() {
   const [heightField, setHeightField] = useState<number>(0);
@@ -28,6 +32,8 @@ export default function App() {
 
   return (
     <C.Main>
+      <GlobalStyles />
+
       <C.Header>
         <C.Area>
           <C.Logo href="https://marcosdev.me/">marcosdev.me</C.Logo>

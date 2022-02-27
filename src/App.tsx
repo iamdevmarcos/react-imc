@@ -1,6 +1,5 @@
 import { useState } from "react";
 import * as C from "./App.styles";
-import poweredImage from "./assets/powered.png";
 import leftArrowImage from "./assets/leftarrow.png";
 import { GridItem } from "./components/GridItem";
 
@@ -31,7 +30,7 @@ export default function App() {
     <C.Main>
       <C.Header>
         <C.Area>
-          <C.Logo src={poweredImage} alt="Logo" width="150" />
+          <C.Logo href="https://marcosdev.me/">marcosdev.me</C.Logo>
         </C.Area>
       </C.Header>
       <C.Container>

@@ -15,7 +15,11 @@ export const Area = styled.div`
   margin: 40px auto;
 `;
 
-export const Logo = styled.img``;
+export const Logo = styled.a`
+  text-decoration: none;
+  font-weight: bold;
+  color: #3a4b5c;
+`;
 
 export const Container = styled.div`
   display: flex;

@@ -18,7 +18,7 @@ export const Area = styled.div`
 export const Logo = styled.a`
   text-decoration: none;
   font-weight: bold;
-  color: #3a4b5c;
+  color: #fff;
 `;
 
 export const Container = styled.div`
@@ -61,13 +61,13 @@ export const Grid = styled.div`
 export const Title = styled.h1`
   margin: 0;
   font-size: 40px;
-  color: #3a4b5c;
+  color: #fff;
 `;
 
 export const Description = styled.p`
   font-size: 16px;
   margin-bottom: 40px;
-  color: #6a7d8b;
+  color: #ddd;
 `;
 
 export const Input = styled.input`
@@ -78,6 +78,8 @@ export const Input = styled.input`
   padding: 10px 2px;
   margin-bottom: 20px;
   font-size: 14px;
+  background: transparent;
+  color: #fff;
 
   &:disabled {
     opacity: 0.5;
@@ -90,7 +92,7 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-  background: #227c9d;
+  background: #000;
   color: #fff;
   font-size: 15px;
   border: 0;
@@ -118,7 +120,7 @@ export const RightBig = styled.div`
 
 export const RightArrow = styled.div`
   position: absolute;
-  background: #227c9d;
+  background: #000;
   width: 70px;
   height: 70px;
   border-radius: 50%;
